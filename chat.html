@@ -1,0 +1,66 @@
+<!-- chat.html – Neo AI Assistant Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat with Neo – Neowise Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #FAF9F6;
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2, h3, .font-grotesk {
+      font-family: 'Inter', sans-serif;
+    }
+    .blueprint-grid {
+      background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+<body class="blueprint-grid text-[#26466D]">
+
+  <!-- Header -->
+  <header class="w-full px-6 py-4 flex justify-between items-center border-b border-[#C79C49] bg-white sticky top-0 z-50">
+    <h1 class="text-2xl font-grotesk">Neowise Partners</h1>
+    <nav class="flex gap-6 items-center text-sm font-semibold">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="index.html#about" class="hover:underline">About</a>
+      <a href="chat.html" class="hover:underline text-[#C79C49]">Chat with Neo</a>
+      <a href="index.html#schedule" class="px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition">Schedule a Call or Video Chat</a>
+    </nav>
+  </header>
+
+  <!-- Chat Page Content -->
+  <section class="px-6 py-16 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-grotesk mb-6">Chat with Neo – our AI Assistant</h2>
+    <p class="text-md text-[#26466D] mb-8 max-w-xl mx-auto">
+      Neo is trained on everything Neowise offers — ask questions about streamlining your operations, improving systems, or preparing for what’s next.
+    </p>
+
+    <div class="border border-[#26466D] rounded-lg overflow-hidden">
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
+        width="100%"
+        height="600"
+        frameborder="0"
+        style="border: none; min-height: 600px;"
+      ></iframe>
+    </div>
+
+    <a href="https://calendly.com/your-link" target="_blank" class="mt-6 inline-block text-sm underline text-[#26466D] hover:text-[#C79C49]">
+      Prefer to talk directly? Schedule a Call or Video Chat
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 px-6 py-6 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
+    &copy; 2024 Neowise Partners
+  </footer>
+
+</body>
+</html>
