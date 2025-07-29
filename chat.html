@@ -25,14 +25,18 @@
 <body class="blueprint-grid text-[#26466D]">
 
   <!-- Header -->
-  <header class="w-full px-6 py-4 flex justify-between items-center border-b border-[#C79C49] bg-white sticky top-0 z-50">
-    <h1 class="text-2xl font-grotesk">Neowise Partners</h1>
-    <nav class="flex gap-6 items-center text-sm font-semibold">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="index.html#about" class="hover:underline">About</a>
-      <a href="chat.html" class="hover:underline text-[#C79C49]">Chat with Neo</a>
-      <a href="index.html#schedule" class="px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition">Schedule a Call or Video Chat</a>
-    </nav>
+   <header class="w-full px-4 sm:px-6 py-4 border-b border-[#C79C49] bg-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <h1 class="text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
+      <nav class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center text-sm font-semibold text-center sm:text-left">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/#about" class="hover:underline">About</a>
+        <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
+        <a href="/#schedule" class="px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
+          Schedule a Call or Video Chat
+        </a>
+      </nav>
+    </div>
   </header>
 
   <!-- Chat Page Content -->
