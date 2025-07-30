@@ -31,8 +31,8 @@
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
       <h1 class="text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
       <nav class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center text-sm font-semibold text-center sm:text-left">
-        <a href="/" class="hover:underline transition hover:text-[#C79C49]">Home</a>
-        <a href="/#about" class="hover:underline transition hover:text-[#C79C49]">About</a>
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/#about" class="hover:underline">About</a>
         <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
         <a href="/#schedule" class="px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
           Schedule a Call or Video Chat
@@ -51,25 +51,28 @@
     </p>
   </section>
 
-  <!-- AI Sketch Image -->
-  <section class="px-4 md:px-6 pt-4 pb-8 max-w-5xl mx-auto text-center">
-    <img src="ai-workflow.png" alt="AI workflow sketch"
-      class="mx-auto max-w-full border-none mt-[-12px] mb-[-12px] transition duration-300 hover:scale-105"
-      style="mix-blend-mode: multiply; opacity: 0.95;" />
+  <!-- Embedded Chatbase Interface -->
+  <section class="px-4 md:px-6 pb-20 max-w-4xl mx-auto">
+    <div class="bg-white border border-[#C79C49] rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-grotesk mb-4 text-center">Start Chatting</h3>
+      <div class="w-full h-[500px]">
+        <iframe
+          src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          class="rounded-lg border border-gray-200"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+    </div>
   </section>
 
-  <!-- Embedded Chat Interface -->
-  <section class="px-4 md:px-6 pb-20 max-w-4xl mx-auto">
-    <div class="bg-white border border-[#C79C49] rounded-xl shadow-md p-6 space-y-4">
-      <h3 class="text-xl font-grotesk text-center font-semibold">Start Chatting with Neo</h3>
-      <!-- Replace this with actual embedded chat widget or iframe -->
-      <div class="h-[500px] bg-[#FAF9F6] border border-dashed border-[#C79C49] rounded-lg flex items-center justify-center text-gray-400 text-sm italic">
-        [ Neo chat interface goes here ]
-      </div>
-      <p class="text-center text-xs text-gray-500">
-        Not sure what to ask? Try:<br>
-        <span class="text-[#26466D] italic font-medium">“How can I reduce manual work in my operations?”</span>
-      </p>
+  <!-- Callout Reminder -->
+  <section class="max-w-4xl mx-auto px-4 md:px-6 pb-12">
+    <div class="text-center text-sm text-gray-500">
+      Not sure what to ask? Try: <br>
+      <span class="italic text-[#26466D]">“What’s the fastest way to reduce manual admin work in my business?”</span>
     </div>
   </section>
 
