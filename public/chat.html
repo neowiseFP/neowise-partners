@@ -52,7 +52,7 @@
   </section>
 
   <!-- Chat Section -->
-  <section class="px-4 md:px-6 py-10 max-w-2xl mx-auto">
+  <section class="px-4 md:px-6 pt-10 pb-6 max-w-2xl mx-auto">
     <div class="bg-white border border-[#C79C49] rounded-xl shadow-lg p-4 md:p-6 space-y-4">
       <h2 class="text-xl font-semibold text-center font-grotesk tracking-tight">Talk to Neo</h2>
 
@@ -73,11 +73,13 @@
       <!-- CTA Button BELOW the chat input box -->
       <div class="pt-6 border-t border-gray-100">
         <div class="flex justify-center">
-          <button onclick="sendToNeo('Can I schedule a call or video chat?')" class="bg-[#C79C49] text-white px-5 py-2 rounded hover:opacity-90 transition shadow-sm">
-            Can I schedule a call or video chat?
-          </button>
+          <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
+            <button class="bg-[#C79C49] text-white px-5 py-2 rounded-full hover:opacity-90 transition shadow-sm">
+              Can I schedule a call or video chat?
+            </button>
+          </a>
         </div>
-        <p class="text-xs text-gray-400 text-center mt-2">
+        <p class="text-xs text-gray-300 text-center mt-1">
           Powered by AI
         </p>
       </div>
@@ -88,18 +90,6 @@
   <footer class="mt-6 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
     &copy; 2024 Neowise Partners
   </footer>
-
-  <!-- Message Injection Script -->
-  <script>
-    function sendToNeo(text) {
-      const iframe = document.getElementById('neoChat');
-      if (!iframe) return;
-      iframe.contentWindow.postMessage({
-        type: 'set-user-message',
-        message: text
-      }, '*');
-    }
-  </script>
 
 </body>
 </html>
