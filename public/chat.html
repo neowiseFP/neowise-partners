@@ -43,24 +43,24 @@
 
   <!-- Hero Section -->
   <section class="px-4 md:px-6 pt-10 pb-2 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-grotesk leading-snug font-semibold mb-4">
+    <h2 class="text-3xl md:text-4xl font-grotesk leading-snug font-semibold tracking-tight mb-4">
       Meet Neo — Your AI Strategy Partner
     </h2>
-    <p class="text-lg leading-relaxed max-w-xl mx-auto">
+    <p class="text-base text-gray-600 leading-relaxed max-w-xl mx-auto">
       Ask Neo anything about your business, operations, or growth goals. Neo is trained to help — not sell.
     </p>
   </section>
 
   <!-- Chat Section -->
-  <section class="px-4 md:px-6 py-10 max-w-4xl mx-auto">
+  <section class="px-4 md:px-6 py-10 max-w-2xl mx-auto">
     <div class="bg-white border border-[#C79C49] rounded-xl shadow-lg p-4 md:p-6 space-y-4">
-      <h2 class="text-xl font-semibold text-center font-grotesk">Talk to Neo</h2>
-      <p class="text-sm text-gray-500 text-center">
-        Have a question? Neo can help you explore, simplify, and make confident decisions.
+      <h2 class="text-xl font-semibold text-center font-grotesk tracking-tight">Talk to Neo</h2>
+      <p class="text-sm text-gray-500 text-center -mt-2">
+        Neo can help you explore, simplify, and make confident decisions.
       </p>
 
       <!-- Chat Embed -->
-      <div class="w-full h-[500px] md:h-[500px] rounded-lg overflow-hidden hover:ring-2 hover:ring-[#C79C49] transition relative">
+      <div class="w-full h-[440px] rounded-lg overflow-hidden transition relative">
         <iframe
           id="neoChat"
           src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
@@ -74,20 +74,21 @@
       </div>
 
       <!-- CTA Button BELOW the chat input box -->
-      <div class="flex justify-center mt-4">
-        <button onclick="sendToNeo('Can I schedule a call or video chat?')" class="bg-[#C79C49] text-white px-5 py-2 rounded hover:opacity-90 transition">
-          Can I schedule a call or video chat?
-        </button>
+      <div class="pt-6 border-t border-gray-100">
+        <div class="flex justify-center">
+          <button onclick="sendToNeo('Can I schedule a call or video chat?')" class="bg-[#C79C49] text-white px-5 py-2 rounded hover:opacity-90 transition shadow-sm">
+            Can I schedule a call or video chat?
+          </button>
+        </div>
+        <p class="text-xs text-gray-400 text-center mt-2">
+          Powered by AI • No sales pitch
+        </p>
       </div>
-
-      <p class="text-xs text-gray-400 text-center mt-1">
-        Powered by AI • No sales pitch
-      </p>
     </div>
   </section>
 
   <!-- Callout Prompt -->
-  <section class="max-w-4xl mx-auto px-4 md:px-6 pb-12">
+  <section class="max-w-2xl mx-auto px-4 md:px-6 pb-12">
     <div class="text-center text-sm text-gray-500">
       Not sure what to ask? Try: <br>
       <span class="italic text-[#26466D]">“What’s the fastest way to reduce manual admin work in my business?”</span>
