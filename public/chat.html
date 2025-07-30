@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neowise Partners</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #FAF9F6;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    h1, h2, h3, .font-grotesk {
+      font-family: 'Inter', sans-serif;
+    }
+    .blueprint-grid {
+      background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+<body id="chat" class="blueprint-grid text-[#26466D]">
+
+  <!-- Header -->
+  <header class="w-full px-4 sm:px-6 py-4 border-b border-[#C79C49] bg-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <h1 class="text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
+      <nav class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center text-sm font-semibold text-center sm:text-left">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/#about" class="hover:underline">About</a>
+        <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
+        <a href="/#schedule" class="px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
+          Schedule a Call or Video Chat
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="px-4 md:px-6 pt-12 pb-4 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-grotesk leading-snug font-semibold mb-4">
+      Meet Neo — Your AI Strategy Partner
+    </h2>
+    <p class="text-lg leading-relaxed max-w-xl mx-auto">
+      Ask Neo anything about your business, operations, or growth goals. Neo is trained to help — not sell.
+    </p>
+  </section>
+
+  <!-- Embedded Chatbase Interface -->
+  <section class="px-4 md:px-6 pb-20 max-w-4xl mx-auto">
+    <div class="bg-white border border-[#C79C49] rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-grotesk mb-4 text-center">Start Chatting</h3>
+      <div class="w-full h-[500px]">
+        <iframe
+          src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          class="rounded-lg border border-gray-200"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout Reminder -->
+  <section class="max-w-4xl mx-auto px-4 md:px-6 pb-12">
+    <div class="text-center text-sm text-gray-500">
+      Not sure what to ask? Try: <br>
+      <span class="italic text-[#26466D]">“What’s the fastest way to reduce manual admin work in my business?”</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
+    &copy; 2024 Neowise Partners
+  </footer>
+
+</body>
+</html>
