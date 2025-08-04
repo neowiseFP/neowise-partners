@@ -7,6 +7,10 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Plausible Analytics -->
+  <script defer data-domain="neowisepartners.com" src="https://plausible.io/js/script.outbound-links.js"></script>
+  
   <style>
     body {
       background-color: #FAF9F6;
@@ -21,11 +25,6 @@
       background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
                         linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
       background-size: 20px 20px;
-    }
-    @media (max-width: 768px) {
-      #chat-container {
-        height: calc(100dvh - 280px); /* Mobile: fill screen, accounting for header + spacing */
-      }
     }
   </style>
 </head>
@@ -45,7 +44,8 @@
           <a href="/#about" class="hover:underline">About</a>
           <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
         </div>
-        <a href="/#schedule" class="text-sm px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
+        <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer"
+          class="text-sm px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
           Schedule a Call
         </a>
       </div>
@@ -54,11 +54,11 @@
   </header>
 
   <!-- Chat Section -->
-  <section class="px-4 md:px-6 pt-6 md:pt-10 pb-6 max-w-2xl mx-auto">
+  <section class="px-4 md:px-6 pt-6 md:pt-10 pb-4 max-w-2xl mx-auto">
     <div class="bg-white border border-[#C79C49] rounded-xl shadow-lg p-4 md:p-6 space-y-4">
 
       <!-- Chat Embed -->
-      <div id="chat-container" class="w-full h-[70vh] md:h-[70vh] max-h-[650px] rounded-lg overflow-hidden transition relative">
+      <div id="chat-container" class="w-full h-[60vh] md:h-[70vh] max-h-[600px] min-h-[360px] rounded-lg overflow-hidden transition relative">
         <iframe
           id="neoChat"
           src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
@@ -71,26 +71,35 @@
         ></iframe>
       </div>
 
-      <!-- CTA Button BELOW the chat input box -->
-      <div class="pt-4 border-t border-gray-100">
-        <div class="flex justify-center">
-          <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
-            <button class="bg-[#C79C49] text-white px-5 py-2 rounded-full hover:opacity-90 transition shadow-sm w-full sm:w-auto mt-2 md:mt-4">
-              Schedule a Call or Video Chat
-            </button>
-          </a>
-        </div>
-        <p class="text-[10px] text-gray-300 mt-1 text-center">
-          Powered by AI
-        </p>
-      </div>
+      <!-- Powered by AI (inside chat card) -->
+      <p class="text-[10px] text-gray-400 text-center mt-2">Powered by AI</p>
     </div>
   </section>
 
+    <!-- CTA Button BELOW the chat box -->
+    <section id="schedule" class="mt-4 px-4 md:px-6 pt-8 pb-6 max-w-2xl mx-auto text-center">
+      <div class="bg-white border border-[#C79C49] rounded-xl p-6 shadow-sm">
+        <h3 class="text-xl font-semibold mb-4">Have questions? Let’s talk.</h3>
+        <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
+          <button class="bg-[#C79C49] text-white text-sm sm:text-base px-4 py-2 sm:px-5 sm:py-2.5 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow inline-block">
+            Schedule a Call
+          </button>
+        </a>
+        <p class="text-xs text-gray-400 mt-3">No forms — just pick a time that works.</p>
+      </div>
+    </section>
+
   <!-- Footer -->
-  <footer class="mt-6 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
+  <footer class="mt-10 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
     &copy; 2024 Neowise Partners
   </footer>
+
+  <script>
+    window.chatbaseConfig = {
+      chatbotId: "66d-JcAyWp17nJ-vjHsXk",
+    };
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" id="chatbase-script" defer></script>
 
 </body>
 </html>
