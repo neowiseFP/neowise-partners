@@ -38,16 +38,24 @@
    body {
      background-color: #FAF9F6;
      font-family: 'Open Sans', sans-serif;
-     font-size: 17px;
-     line-height: 1.6;
+     font-size: 20px;
+     line-height: 1.7;
    }
    h1, h2, h3, .font-grotesk {
      font-family: 'Inter', sans-serif;
+     font-weight: 600;
    }
    .blueprint-grid {
      background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
                        linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
      background-size: 20px 20px;
+   }
+   .content-box {
+     background-color: #FAF9F6;
+     border-radius: 0.5rem;
+     padding: 2rem;
+     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+     ring: 1px solid rgb(199 156 73 / 0.1);
    }
  </style>
 </head>
@@ -97,26 +105,26 @@
  </section>
 
  <!-- Callout Stats Section -->
- <section class="max-w-6xl mx-auto px-4 md:px-6 pt-0 -mt-10 sm:-mt-16 pb-6 grid gap-6 md:grid-cols-3 text-center">
-   <div class="bg-white border-l-4 border-[#C79C49] p-6 rounded shadow-sm">
-     <p class="text-lg font-semibold">Untapped profit potential</p>
-     <p class="text-sm text-gray-500 mt-2">Most successful companies have 15-25% more profit waiting to be captured with the right approach.</p>
+ <section class="max-w-6xl mx-auto px-4 md:px-6 pt-0 -mt-10 sm:-mt-16 pb-8 grid gap-6 md:grid-cols-3 text-center">
+   <div class="bg-white border-l-4 border-[#C79C49] p-8 rounded shadow-sm">
+     <p class="text-xl font-semibold mb-3">Untapped profit potential</p>
+     <p class="text-lg text-gray-700 leading-relaxed">Most successful companies have 15-25% more profit waiting to be captured with the right approach.</p>
    </div>
-   <div class="bg-white border-l-4 border-[#C79C49] p-6 rounded shadow-sm">
-     <p class="text-lg font-semibold">Smarter, not harder</p>
-     <p class="text-sm text-gray-500 mt-2">You've proven you can build. Now let's make every hour and dollar work better for you.</p>
+   <div class="bg-white border-l-4 border-[#C79C49] p-8 rounded shadow-sm">
+     <p class="text-xl font-semibold mb-3">Smarter, not harder</p>
+     <p class="text-lg text-gray-700 leading-relaxed">You've proven you can build. Now let's make every hour and dollar work better for you.</p>
    </div>
-   <div class="bg-white border-l-4 border-[#C79C49] p-6 rounded shadow-sm">
-     <p class="text-lg font-semibold">Built for what's next</p>
-     <p class="text-sm text-gray-500 mt-2">Whether that's growth, partnership, or exit—let's position your business for maximum value.</p>
+   <div class="bg-white border-l-4 border-[#C79C49] p-8 rounded shadow-sm">
+     <p class="text-xl font-semibold mb-3">Built for what's next</p>
+     <p class="text-lg text-gray-700 leading-relaxed">Whether that's growth, partnership, or exit—let's position your business for maximum value.</p>
    </div>
  </section>
 
  <!-- WHY NEOWISE PARTNERS -->
- <section class="px-4 md:px-6 pt-6 pb-6 sm:py-8 max-w-6xl mx-auto">
-   <div class="bg-[#FAF9F6] rounded-lg p-8 shadow-sm ring-1 ring-[#C79C49]/10 text-[16px] leading-relaxed md:leading-snug">
-     <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center">Why Neowise Partners</h3>
-     <div class="max-w-3xl mx-auto space-y-6">
+ <section class="px-4 md:px-6 pt-8 pb-8 max-w-6xl mx-auto">
+   <div class="content-box text-[20px] leading-relaxed">
+     <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">Why Neowise Partners</h3>
+     <div class="space-y-6">
        <p>
          After years of hard work, your business is successful—but you know it could run smoother. You're tired of daily firefighting, the manual processes that waste time, and watching profits get lost in inefficiency.
        </p>
@@ -134,23 +142,23 @@
  </section>
 
  <!-- THREE FOCUS AREAS -->
- <section class="px-4 md:px-6 pt-6 pb-6 sm:py-8 max-w-6xl mx-auto">
+ <section class="px-4 md:px-6 pt-8 pb-8 max-w-6xl mx-auto">
    <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
      <!-- Text on the left -->
-     <div class="bg-[#FAF9F6] rounded-lg p-8 shadow-sm ring-1 ring-[#C79C49]/10 text-[16px] leading-relaxed md:leading-snug">
-       <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center">Three Focus Areas</h3>
-       <div class="space-y-5">
+     <div class="content-box text-[20px] leading-relaxed">
+       <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">Three Focus Areas</h3>
+       <div class="space-y-6">
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Operational Excellence</h4>
-           <p class="text-sm">Streamline processes and eliminate bottlenecks that limit growth. Automate the mundane tasks so your business runs without you being involved in every decision.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Operational Excellence</h4>
+           <p class="text-lg">Streamline processes and eliminate bottlenecks that limit growth. Automate the mundane tasks so your business runs without you being involved in every decision.</p>
          </div>
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Financial Performance</h4>
-           <p class="text-sm">Capture the 15-25% profit increase that's typically available in successful businesses through better systems and decision-making.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Financial Performance</h4>
+           <p class="text-lg">Capture the 15-25% profit increase that's typically available in successful businesses through better systems and decision-making.</p>
          </div>
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Value Creation</h4>
-           <p class="text-sm">Build the kind of business that's attractive to buyers or partners. Position for growth or a future exit on your terms.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Value Creation</h4>
+           <p class="text-lg">Build the kind of business that's attractive to buyers or partners. Position for growth or a future exit on your terms.</p>
          </div>
        </div>
      </div>
@@ -168,7 +176,7 @@
  </section>
 
  <!-- HOW WE WORK TOGETHER -->
- <section class="px-4 md:px-6 pt-6 pb-6 sm:py-8 max-w-6xl mx-auto">
+ <section class="px-4 md:px-6 pt-8 pb-8 max-w-6xl mx-auto">
    <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
      <!-- Image on the left -->
      <div class="flex justify-center order-last sm:order-first">
@@ -180,43 +188,34 @@
      </div>
 
      <!-- Text on the right -->
-     <div class="bg-[#FAF9F6] rounded-lg p-8 shadow-sm ring-1 ring-[#C79C49]/10 text-[16px] leading-relaxed md:leading-snug">
-       <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center">How We Work Together</h3>
-       <p class="text-center text-sm font-semibold text-[#C79C49] mb-4">A Partner, Not Another Vendor</p>
-       <div class="space-y-4">
+     <div class="content-box text-[20px] leading-relaxed">
+       <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">How We Work Together</h3>
+       <p class="text-center text-lg font-semibold text-[#C79C49] mb-6">A Partner, Not Another Vendor</p>
+       <div class="space-y-5">
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Listen First</h4>
-           <p class="text-sm">You know your business better than anyone. We start by understanding what's working and where you want to go.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Listen First</h4>
+           <p class="text-lg">You know your business better than anyone. We start by understanding what's working and where you want to go.</p>
          </div>
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Focus on Fundamentals</h4>
-           <p class="text-sm">Strong operations and financial clarity come before fancy technology. We build on what works.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Focus on Fundamentals</h4>
+           <p class="text-lg">Strong operations and financial clarity come before fancy technology. We build on what works.</p>
          </div>
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Implement Together</h4>
-           <p class="text-sm">If it doesn't improve the bottom line or make your life easier, we don't do it. We work side by side to make improvements that stick.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Implement Together</h4>
+           <p class="text-lg">If it doesn't improve the bottom line or make your life easier, we don't do it. We work side by side to make improvements that stick.</p>
          </div>
          <div>
-           <h4 class="font-semibold text-[#26466D] mb-2">Transfer Knowledge</h4>
-           <p class="text-sm">We train your people so you own the improvements, not rent them from us.</p>
+           <h4 class="font-semibold text-[#26466D] mb-3 text-xl">Transfer Knowledge</h4>
+           <p class="text-lg">We train your people so you own the improvements, not rent them from us.</p>
          </div>
        </div>
      </div>
    </div>
  </section>
 
- <!-- TRANSITION TO ABOUT -->
- <section class="px-4 md:px-6 pt-8 pb-4 max-w-4xl mx-auto text-center">
-   <div class="content-box">
-     <p class="text-[18px] leading-relaxed font-medium">
-       You've invested years building your company. Now it's time to make it work as hard as you and your team do.
-     </p>
-   </div>
- </section>
-
  <!-- ABOUT TOM -->
  <section id="about" class="scroll-mt-24 px-4 md:px-6 pt-8 pb-8 max-w-6xl mx-auto">
-   <div class="content-box text-[19px] leading-relaxed">
+   <div class="content-box text-[20px] leading-relaxed">
      <h3 class="text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">About Tom</h3>
      <div class="space-y-6">
        <p>I've spent my career in operations, finance, and strategy—helping businesses work better and grow smarter.</p>
