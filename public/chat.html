@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="theme-color" content="#FAF9F6" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neowise Partners</title>
+  <title>Chat with Neo - Neowise Partners</title>
+  
+  <!-- Meta: SEO & Social Sharing -->
+  <meta name="description" content="Chat with Neo, our AI assistant, to learn more about how Neowise Partners can help optimize your business operations." />
+  <meta name="keywords" content="business chat, AI assistant, Neowise Partners, business optimization" />
+  <meta name="author" content="Tom, Neowise Partners" />
+  
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,29 +22,37 @@
     body {
       background-color: #FAF9F6;
       font-family: 'Open Sans', sans-serif;
-      font-size: 17px;
-      line-height: 1.6;
+      font-size: 19px;
+      line-height: 1.7;
     }
     h1, h2, h3, .font-grotesk {
       font-family: 'Inter', sans-serif;
+      font-weight: 600;
     }
     .blueprint-grid {
       background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
                         linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
       background-size: 20px 20px;
     }
+    .content-box {
+      background-color: #FAF9F6;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      ring: 1px solid rgb(199 156 73 / 0.1);
+    }
   </style>
 </head>
 <body id="chat" class="blueprint-grid text-[#26466D]">
 
   <!-- Header -->
-   <header class="w-full px-4 sm:px-6 py-3 border-b border-[#C79C49] bg-white sticky top-0 z-50">
+  <header class="w-full px-4 sm:px-6 py-3 border-b border-[#C79C49] bg-white sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
       
-      <!-- Logo -->
+      <!-- Left: Logo -->
       <h1 class="text-xl sm:text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
 
-      <!-- Nav + CTA -->
+      <!-- Center/Right: Nav + Button (wraps on mobile) -->
       <div class="flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-2 text-sm font-semibold text-center sm:text-left">
         <div class="flex justify-center gap-4">
           <a href="/" class="hover:underline">Home</a>
@@ -53,52 +68,76 @@
     </div>
   </header>
 
+  <!-- Page Title -->
+  <section class="px-4 md:px-6 pt-8 pb-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-grotesk leading-snug tracking-tight font-semibold mb-4">
+      Chat with Neo
+    </h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Ask questions about operational efficiency, business optimization, or how Neowise Partners can help your business.
+    </p>
+  </section>
+
   <!-- Chat Section -->
-  <section class="px-4 sm:px-6 md:px-8 pt-6 md:pt-10 pb-4 max-w-3xl mx-auto">
-    <div class="bg-white border border-[#C79C49] rounded-xl shadow-lg p-4 md:p-6 space-y-4">
+  <section class="px-4 md:px-6 pt-4 pb-8 max-w-4xl mx-auto">
+    <div class="bg-white border-2 border-[#C79C49] rounded-xl shadow-lg p-6 md:p-8">
 
-  <!-- Chat Embed -->
-  <div id="chat-container" class="relative w-full h-[60vh] sm:h-[65vh] md:h-[70vh] max-h-[600px] min-h-[360px] rounded-lg overflow-hidden transition">
+      <!-- Chat Embed -->
+      <div id="chat-container" class="relative w-full h-[60vh] sm:h-[65vh] md:h-[70vh] max-h-[600px] min-h-[400px] rounded-lg overflow-hidden">
 
-    <!-- Loading Overlay -->
-    <div id="chat-loading" class="absolute inset-0 flex items-center justify-center bg-white z-10">
-      <div class="flex items-center gap-2 text-sm text-[#C79C49] font-semibold">
-        <svg class="animate-spin h-4 w-4 text-[#C79C49]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3.5-3.5L12 0v4a8 8 0 100 16v4l3.5-3.5L12 20v-4a8 8 0 01-8-8z"></path>
-        </svg>
-        Loading chat...
+        <!-- Loading Overlay -->
+        <div id="chat-loading" class="absolute inset-0 flex items-center justify-center bg-white z-10">
+          <div class="flex items-center gap-3 text-base text-[#C79C49] font-semibold">
+            <svg class="animate-spin h-5 w-5 text-[#C79C49]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3.5-3.5L12 0v4a8 8 0 100 16v4l3.5-3.5L12 20v-4a8 8 0 01-8-8z"></path>
+            </svg>
+            Loading Neo...
+          </div>
+        </div>
+
+        <!-- Actual Chat Iframe -->
+        <iframe
+          id="neoChat"
+          src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          class="w-full h-full border-0 rounded-lg"
+          allow="clipboard-write"
+          title="Neo Chat Assistant"
+          onload="document.getElementById('chat-loading').style.display='none';"
+        ></iframe>
       </div>
-    </div>
 
-    <!-- Actual Chat Iframe -->
-    <iframe
-      id="neoChat"
-      src="https://www.chatbase.co/chatbot-iframe/66d-JcAyWp17nJ-vjHsXk"
-      width="100%"
-      height="100%"
-      frameborder="0"
-      class="w-full h-full border-0"
-      allow="clipboard-write"
-      title="Neo Chat Assistant"
-      onload="document.getElementById('chat-loading').style.display='none';"
-    ></iframe>
-  </div>
-      <!-- Powered by AI (inside chat card) -->
-      <p class="text-[10px] text-gray-400 text-center mt-2">Powered by AI</p>
+      <!-- Powered by AI -->
+      <p class="text-sm text-gray-500 text-center mt-4">Powered by AI</p>
     </div>
   </section>
 
-  <!-- CTA Button BELOW the chat box -->
-  <section id="schedule" class="mt-4 px-4 sm:px-6 md:px-8 pt-8 pb-6 max-w-3xl mx-auto text-center">
-    <div class="bg-white border border-[#C79C49] rounded-xl p-6 shadow-sm">
-      <h3 class="text-xl font-semibold mb-4">Have questions? Let’s talk.</h3>
+  <!-- Info Section -->
+  <section class="px-4 md:px-6 pt-4 pb-8 max-w-4xl mx-auto">
+    <div class="content-box text-[19px] leading-relaxed text-center">
+      <h3 class="text-xl font-grotesk font-semibold mb-4 text-[#26466D]">About Neo</h3>
+      <p class="text-base text-gray-700 mb-4">
+        Neo can share ideas about automating workflows, streamlining operations, and preparing your business for growth or sale.
+      </p>
+      <p class="text-base text-gray-700">
+        For specific recommendations tailored to your business, schedule a call with Tom.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="schedule" class="mt-4 px-4 md:px-6 pt-8 pb-8 max-w-2xl mx-auto text-center">
+    <div class="bg-white border-2 border-[#C79C49] rounded-xl p-8 shadow-sm">
+      <h3 class="text-xl font-semibold mb-4">Ready to talk strategy?</h3>
       <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
-        <button class="bg-[#C79C49] text-white text-sm sm:text-base px-4 py-2 sm:px-5 sm:py-2.5 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow inline-block">
-          Schedule a Call
+        <button class="bg-[#C79C49] text-white text-lg px-6 py-3 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow font-semibold">
+          Schedule a Call with Tom
         </button>
       </a>
-      <p class="text-xs text-gray-400 mt-3">No forms — just pick a time that works.</p>
+      <p class="text-base text-gray-700 mt-4 leading-relaxed">30 minutes, no agenda—just an honest conversation between two business people.</p>
     </div>
   </section>
 
