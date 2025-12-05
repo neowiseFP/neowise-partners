@@ -1,616 +1,293 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8" />
-
-<meta name="theme-color" content="#FAF9F6" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Neowise Partners</title>
-
-
-
-<!-- Meta: SEO & Social Sharing -->
-
-<meta name="description" content="Neowise Partners helps successful business owners optimize operations, increase profitability, and maximize value for growth or sale" />
-
-<meta name="keywords" content="business operations, profit optimization, sale strategy, business value, operational excellence" />
-
-<meta name="author" content="Tom, Neowise Partners" />
-
-
-
-<!-- Open Graph (LinkedIn, Facebook, iMessage) -->
-
-<meta property="og:title" content="Neowise Partners - Ready for What's Next" />
-
-<meta property="og:description" content="You've built something special. Ready for the next level?" />
-
-<meta property="og:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
-
-<meta property="og:url" content="https://neowisepartners.com/" />
-
-<meta property="og:type" content="website" />
-
-
-
-<!-- Twitter Card -->
-
-<meta name="twitter:card" content="summary_large_image" />
-
-<meta name="twitter:title" content="Neowise Partners - Ready for What's Next" />
-
-<meta name="twitter:description" content="You've built something special and know how to run a successful business." />
-
-<meta name="twitter:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
-
-
-
-<!-- Favicon + Fonts -->
-
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
-
-
-
-<!-- Tailwind -->
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-
-
-<!-- Plausible Analytics -->
-
-<script defer data-domain="neowisepartners.com" src="https://plausible.io/js/script.outbound-links.js"></script>
-
-
-
-<style>
-
-/* Mobile-first approach */
-
-body {
-
-background-color: #FAF9F6;
-
-font-family: 'Open Sans', sans-serif;
-
-font-size: 18px;
-
-line-height: 1.7;
-
-}
-
-
-/* Tablet and up */
-
-@media (min-width: 768px) {
-
-body {
-
-font-size: 19px;
-
-}
-
-}
-
-
-/* Desktop */
-
-@media (min-width: 1024px) {
-
-body {
-
-font-size: 20px;
-
-}
-
-}
-
-
-h1, h2, h3, .font-grotesk {
-
-font-family: 'Inter', sans-serif;
-
-font-weight: 600;
-
-}
-
-.blueprint-grid {
-
-background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
-
-linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
-
-background-size: 20px 20px;
-
-}
-
-.content-box {
-
-background-color: #FAF9F6;
-
-border-radius: 0.5rem;
-
-padding: 1.5rem;
-
-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-
-border: 1px solid rgb(199 156 73 / 0.1);
-
-}
-
-
-/* Tablet and up */
-
-@media (min-width: 768px) {
-
-.content-box {
-
-padding: 2rem;
-
-}
-
-}
-
-
-/* Mobile CTA button sizing */
-
-.mobile-cta {
-
-min-height: 48px;
-
-padding: 12px 24px;
-
-touch-action: manipulation;
-
-}
-
-
-/* Tablet and up CTA */
-
-@media (min-width: 768px) {
-
-.mobile-cta {
-
-padding: 12px 32px;
-
-}
-
-}
-
-
-/* Mobile font adjustments */
-
-.mobile-text-lg {
-
-font-size: 17px;
-
-}
-
-
-@media (min-width: 768px) {
-
-.mobile-text-lg {
-
-font-size: 18px;
-
-}
-
-}
-
-
-.mobile-text-xl {
-
-font-size: 19px;
-
-}
-
-
-@media (min-width: 768px) {
-
-.mobile-text-xl {
-
-font-size: 20px;
-
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#FAF9F6" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neowise Partners</title>
+
+  <meta name="description" content="Neowise Partners helps successful business owners optimize operations, increase profitability, and maximize value for growth or sale" />
+  <meta name="keywords" content="business operations, profit optimization, sale strategy, business value, operational excellence" />
+  <meta name="author" content="Tom, Neowise Partners" />
+
+  <meta property="og:title" content="Neowise Partners - Ready for What's Next" />
+  <meta property="og:description" content="You've built something special. Ready for the next level?" />
+  <meta property="og:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
+  <meta property="og:url" content="https://neowisepartners.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Neowise Partners - Ready for What's Next" />
+  <meta name="twitter:description" content="You've built something special and know how to run a successful business." />
+  <meta name="twitter:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script defer data-domain="neowisepartners.com" src="https://plausible.io/js/script.outbound-links.js"></script>
+
+  <style>
+    /* Mobile-first approach */
+    body {
+      background-color: #FAF9F6;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    
+    /* Tablet and up */
+    @media (min-width: 768px) {
+      body {
+        font-size: 19px;
+      }
+    }
+    
+    /* Desktop */
+    @media (min-width: 1024px) {
+      body {
+        font-size: 20px;
+      }
+    }
+    
+    h1, h2, h3, .font-grotesk {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+    .blueprint-grid {
+      background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .content-box {
+      background-color: #FAF9F6;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      border: 1px solid rgb(199 156 73 / 0.1);
+    }
+    
+    /* Tablet and up */
+    @media (min-width: 768px) {
+      .content-box {
+        padding: 2rem;
+      }
+    }
+    
+    /* Mobile CTA button sizing */
+    .mobile-cta {
+      min-height: 48px;
+      padding: 12px 24px;
+      touch-action: manipulation;
+    }
+    
+    /* Tablet and up CTA */
+    @media (min-width: 768px) {
+      .mobile-cta {
+        padding: 12px 32px;
+      }
+    }
+    
+    /* Mobile font adjustments */
+    .mobile-text-lg {
+      font-size: 17px;
+    }
+    
+    @media (min-width: 768px) {
+      .mobile-text-lg {
+        font-size: 18px;
+      }
+    }
+    
+    .mobile-text-xl {
+      font-size: 19px;
+    }
+    
+    @media (min-width: 768px) {
+      .mobile-text-xl {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
-
-
 
 <body id="home" class="blueprint-grid text-[#26466D]">
 
-
-
-<!-- Header -->
-
-<header class="w-full px-4 sm:px-6 py-3 border-b border-[#C79C49] bg-white sticky top-0 z-50">
-
-<div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
-
-
-<!-- Left: Logo -->
-
-<h1 class="text-xl sm:text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
-
-
-
-<!-- Center/Right: Nav + Button (wraps on mobile) -->
-
-<div class="flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-2 text-sm font-semibold text-center sm:text-left">
-
-<div class="flex justify-center gap-4">
-
-<a href="/" class="hover:underline">Home</a>
-
-<a href="#about" class="hover:underline">About</a>
-
-<a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
-
-</div>
-
-<a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer"
-
-class="text-sm px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
-
-Schedule a Call
-
-</a>
-
-</div>
-
-
-
-</div>
-
-</header>
-
-
-
-<!-- Hero Section -->
-
-<section class="px-4 md:px-6 pt-8 pb-0 max-w-5xl mx-auto text-center">
-
-<h2 class="text-xl md:text-2xl xl:text-3xl font-grotesk leading-snug tracking-tight font-semibold mb-2 mx-auto text-center max-w-[1100px]">
-
-You've built something special. Ready for the next level?
-
-</h2>
-
-</section>
-
-
-
-<!-- AI Image -->
-
-<section class="px-4 md:px-6 pt-0 pb-4 sm:pb-4 max-w-5xl mx-auto text-center">
-
-<img
-
-src="/hero-graphic-20250730.png"
-
-alt="AI-powered workflow sketch"
-
-class="mx-auto max-w-full object-top max-h-[200px] sm:max-h-none border-none mt-[-12px]"
-
-style="mix-blend-mode: multiply; opacity: 0.95;"
-
-loading="lazy"
-
-decoding="async"
-
-/>
-
-</section>
-
-
-
-<!-- Callout Stats Section -->
-
-<section class="max-w-6xl mx-auto px-4 md:px-6 pt-0 -mt-6 sm:-mt-10 lg:-mt-16 pb-6 sm:pb-8 grid gap-4 sm:gap-6 md:grid-cols-3 text-center">
-
-<div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-
-<p class="text-lg sm:text-xl font-semibold mb-3">Untapped profit potential</p>
-
-<p class="mobile-text-lg text-gray-700 leading-relaxed">Most successful companies have 15-25% more profit waiting to be captured with better systems.</p>
-
-</div>
-
-<div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-
-<p class="text-lg sm:text-xl font-semibold mb-3">Smarter, not harder</p>
-
-<p class="mobile-text-lg text-gray-700 leading-relaxed">You've proven you can build. Now let's make every hour and dollar work better for you.</p>
-
-</div>
-
-<div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-
-<p class="text-lg sm:text-xl font-semibold mb-3">Built for what's next</p>
-
-<p class="mobile-text-lg text-gray-700 leading-relaxed">Whether that's growth, partnership, or sale—let's position your business for maximum value.</p>
-
-</div>
-
-</section>
-
-
-
-<!-- WHY NEOWISE PARTNERS -->
-
-<section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-
-<div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-
-<h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Why Neowise Partners</h3>
-
-<div class="space-y-4 sm:space-y-6">
-
-<p>
-
-You've built a valuable business through smart decisions and hard work. Now you're thinking about the next chapter—whether that's growth, bringing in partners, or positioning for an eventual sale.
-
-</p>
-
-<p>
-
-Neowise Partners helps successful business owners unlock the additional profit that's typically available and build the operational systems that increase enterprise value. Our approach focuses on operations and financial fundamentals first, then adds technology only when it makes sense.
-
-</p>
-
-<p>
-
-No software sales, no commissions, no theoretical frameworks that sound impressive but don't work in the real world. Just practical improvements that deliver measurable results and position your business for growth, partnerships, or sale.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- THREE FOCUS AREAS -->
-
-<section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-
-<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
-
-<!-- Text on the left -->
-
-<div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-
-<h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Three Focus Areas</h3>
-
-<div class="space-y-4 sm:space-y-6">
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Streamlined Operations</h4>
-
-<p class="mobile-text-lg">Leverage technology to automate the manual processes that are time-consuming. Free up capacity to focus on what matters most to your business.</p>
-
-</div>
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Hidden Profit Potential</h4>
-
-<p class="mobile-text-lg">Capture the 15-25% profit increase that's typically available in successful businesses through better systems and data-driven decision-making.</p>
-
-</div>
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Value Creation</h4>
-
-<p class="mobile-text-lg">Build the kind of business that's attractive to buyers or partners. Position for growth or a future sale on your terms.</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- Image on the right -->
-
-<div class="flex justify-center order-first lg:order-last">
-
-<img
-
-src="/before-after-20250730.png"
-
-alt="Before/After business optimization illustration"
-
-class="w-full max-w-sm sm:max-w-md object-top max-h-[180px] sm:max-h-[200px] lg:max-h-none rounded-md shadow-sm opacity-90"
-
-loading="lazy"
-
-/>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- HOW WE WORK TOGETHER -->
-
-<section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-
-<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
-
-<!-- Image on the left -->
-
-<div class="flex justify-center order-first lg:order-first">
-
-<img
-
-src="/growth-insight-20250730.png"
-
-alt="Business partnership conversation illustration"
-
-class="w-full max-w-sm sm:max-w-md object-top max-h-[180px] sm:max-h-[200px] lg:max-h-none rounded-md shadow-sm opacity-90"
-
-loading="lazy"/>
-
-</div>
-
-
-
-<!-- Text on the right -->
-
-<div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-
-<h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">How We Work Together</h3>
-
-<p class="text-center mobile-text-lg font-semibold text-[#C79C49] mb-4 sm:mb-6">A Partner, Not Another Vendor</p>
-
-<div class="space-y-4 sm:space-y-5">
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Listen First</h4>
-
-<p class="mobile-text-lg">Every business is unique. We start by learning what's working and identifying the areas with highest potential impact.</p>
-
-</div>
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Build on What Works</h4>
-
-<p class="mobile-text-lg">Strong operations and clear financials come first. We enhance your proven systems before adding new technology.</p>
-
-</div>
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Implement Together</h4>
-
-<p class="mobile-text-lg">Real change happens through action, not reports. We work side by side to make improvements that stick and deliver results.</p>
-
-</div>
-
-<div>
-
-<h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Transfer Knowledge</h4>
-
-<p class="mobile-text-lg">You own the improvements, not rent them from us. Your team gets trained so the benefits continue long-term.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ABOUT TOM -->
-
-<section id="about" class="scroll-mt-24 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-
-<div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-
-<h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">About Tom</h3>
-
-
-<div class="space-y-4 sm:space-y-6">
-
-<!-- Float photo left in first paragraph -->
-
-<p>
-
-<img
-
-src="/tom-headshot.jpg"
-
-alt="Tom Saric, Founder of Neowise Partners"
-
-class="w-36 h-36 sm:w-44 sm:h-44 float-left mr-6 mb-4 mt-2 rounded-lg shadow-lg object-cover"
-
-loading="lazy"
-
-/>
-
-My background is in operations, finance, and strategy—with a track record of turning operational improvements into bottom-line results.
-
-</p>
-
-
-<p>I know what it's like to scale a business because I've lived it. I helped take a family-owned company from $3 million to $55 million by building the operational foundation and implementing the right technology to expand across multiple states.</p>
-
-
-<p>When COVID-19 disrupted an $85 million acquisition I was leading, I guided the company through the crisis—restructuring operations and stabilizing the business to ensure it emerged stronger.</p>
-
-
-<p>That experience taught me that successful business owners don't need theoretical advice. They need practical solutions from someone who's been in the trenches. I started Neowise Partners to help business owners maximize what they've built—whether they're preparing for growth, considering partnerships, or preparing for a sale.</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Schedule CTA -->
-
-<section id="schedule" class="mt-4 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-2xl mx-auto text-center">
-
-<div class="bg-white border-2 border-[#C79C49] rounded-xl p-6 sm:p-8 shadow-sm">
-
-<h3 class="text-lg sm:text-xl font-semibold mb-4">Let's talk about your next move.</h3>
-
-<a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
-
-<button class="mobile-cta bg-[#C79C49] text-white text-base sm:text-lg px-6 py-3 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow font-semibold w-full sm:w-auto">
-
-Schedule a Call
-
-</button>
-
-</a>
-
-<p class="text-sm sm:text-base text-gray-700 mt-4 leading-relaxed">30 minutes to explore your goals and see if we're the right partner.</p>
-
-</div>
-
-</section>
-
-
-
-<!-- Footer -->
-
-<footer class="mt-10 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
-
-&copy; 2024 Neowise Partners
-
-</footer>
-
-
+  <header class="w-full px-4 sm:px-6 py-3 border-b border-[#C79C49] bg-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
+      
+      <h1 class="text-xl sm:text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
+
+      <div class="flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-2 text-sm font-semibold text-center sm:text-left">
+        <div class="flex justify-center gap-4">
+          <a href="/" class="hover:underline">Home</a>
+          <a href="#about" class="hover:underline">About</a>
+          <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
+        </div>
+        <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer"
+          class="text-sm px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
+          Schedule a Call
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="px-4 md:px-6 pt-8 pb-0 max-w-5xl mx-auto text-center">
+  <h2 class="text-xl md:text-2xl xl:text-3xl font-grotesk leading-snug tracking-tight font-semibold mb-2 mx-auto text-center max-w-[1100px]">
+    You've built something special. Ready for the next level?
+  </h2>
+  </section>
+
+  <section class="px-4 md:px-6 pt-0 pb-4 sm:pb-4 max-w-5xl mx-auto text-center">
+    <img
+      src="/hero-graphic-20250730.png"
+      alt="AI-powered workflow sketch"
+      class="mx-auto max-w-full object-top max-h-[200px] sm:max-h-none border-none mt-[-12px]"
+      style="mix-blend-mode: multiply; opacity: 0.95;"
+      loading="lazy"
+      decoding="async"
+    />
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 md:px-6 pt-0 -mt-6 sm:-mt-10 lg:-mt-16 pb-6 sm:pb-8 grid gap-4 sm:gap-6 md:grid-cols-3 text-center">
+    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
+      <p class="text-lg sm:text-xl font-semibold mb-3">Untapped profit potential</p>
+      <p class="mobile-text-lg text-gray-700 leading-relaxed">Most successful companies have 15-25% more profit waiting to be captured with better systems.</p>
+    </div>
+    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
+      <p class="text-lg sm:text-xl font-semibold mb-3">Smarter, not harder</p>
+      <p class="mobile-text-lg text-gray-700 leading-relaxed">You've proven you can build. Now let's make every hour and dollar work better for you.</p>
+    </div>
+    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
+      <p class="text-lg sm:text-xl font-semibold mb-3">Built for what's next</p>
+      <p class="mobile-text-lg text-gray-700 leading-relaxed">Whether that's growth, partnership, or sale—let's position your business for maximum value.</p>
+    </div>
+  </section>
+
+  <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
+     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
+       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Why Neowise Partners</h3>
+       <div class="space-y-4 sm:space-y-6">
+         <p>
+           You've built a valuable business through smart decisions and hard work. Now you're thinking about the next chapter—whether that's growth, bringing in partners, or positioning for an eventual sale.
+         </p>
+         <p>
+           Neowise Partners helps successful business owners unlock the additional profit that's typically available and build the operational systems that increase enterprise value. Our approach focuses on operations and financial fundamentals first, then adds technology only when it makes sense.
+         </p>
+         <p>
+           No software sales, no commissions, no theoretical frameworks that sound impressive but don't work in the real world. Just practical improvements that deliver measurable results and position your business for growth, partnerships, or sale.
+         </p>
+       </div>
+     </div>
+   </section>
+
+ <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
+   <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
+     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
+       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Three Focus Areas</h3>
+       <div class="space-y-4 sm:space-y-6">
+         <div>
+           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Streamlined Operations</h4>
+           <p class="mobile-text-lg">Leverage technology to automate the manual processes that are time-consuming. Free up capacity to focus on what matters most to your business.</p>
+         </div>
+         <div>
+           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Hidden Profit Potential</h4>
+           <p class="mobile-text-lg">Capture the 15-25% profit increase that's typically available in successful businesses through better systems and data-driven decision-making.</p>
+         </div>
+         <div>
+           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Value Creation</h4>
+           <p class="mobile-text-lg">Build the kind of business that's attractive to buyers or partners. Position for growth or a future sale on your terms.</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="flex justify-center order-first lg:order-last">
+       <img
+       src="/before-after-20250730.png"
+       alt="Before/After business optimization illustration"
+       class="w-full max-w-lg lg:max-w-xl rounded-md shadow-md opacity-95"
+       loading="lazy"
+       />
+     </div>
+   </div>
+ </section>
+
+   <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
+     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
+       <div class="flex justify-center order-first lg:order-first">
+         <img
+         src="/growth-insight-20250730.png"
+         alt="Business partnership conversation illustration"
+         class="w-full max-w-lg lg:max-w-xl rounded-md shadow-md opacity-95"
+         loading="lazy"/>
+       </div>
+
+       <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
+         <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">How We Work Together</h3>
+         <p class="text-center mobile-text-lg font-semibold text-[#C79C49] mb-4 sm:mb-6">A Partner, Not Another Vendor</p>
+         <div class="space-y-4 sm:space-y-5">
+           <div>
+             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Listen First</h4>
+             <p class="mobile-text-lg">Every business is unique. We start by learning what's working and identifying the areas with highest potential impact.</p>
+           </div>
+           <div>
+             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Build on What Works</h4>
+             <p class="mobile-text-lg">Strong operations and clear financials come first. We enhance your proven systems before adding new technology.</p>
+           </div>
+           <div>
+             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Implement Together</h4>
+             <p class="mobile-text-lg">Real change happens through action, not reports. We work side by side to make improvements that stick and deliver results.</p>
+           </div>
+           <div>
+             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Transfer Knowledge</h4>
+             <p class="mobile-text-lg">You own the improvements, not rent them from us. Your team gets trained so the benefits continue long-term.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="about" class="scroll-mt-24 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
+     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
+       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">About Tom</h3>
+       
+       <div class="space-y-4 sm:space-y-6">
+         <p>
+           <img
+             src="/tom-headshot.jpg"
+             alt="Tom Saric, Founder of Neowise Partners"
+             class="w-36 h-36 sm:w-44 sm:h-44 float-left mr-6 mb-4 mt-2 rounded-lg shadow-lg object-cover"
+             loading="lazy"
+           />
+           My background is in operations, finance, and strategy—with a track record of turning operational improvements into bottom-line results.
+         </p>
+         
+         <p>I know what it's like to scale a business because I've lived it. I helped take a family-owned company from $3 million to $55 million by building the operational foundation and implementing the right technology to expand across multiple states.</p>
+         
+         <p>When COVID-19 disrupted an $85 million acquisition I was leading, I guided the company through the crisis—restructuring operations and stabilizing the business to ensure it emerged stronger.</p>
+         
+         <p>That experience taught me that successful business owners don't need theoretical advice. They need practical solutions from someone who's been in the trenches. I started Neowise Partners to help business owners maximize what they've built—whether they're preparing for growth, considering partnerships, or preparing for a sale.</p>
+       </div>
+     </div>
+   </section>
+
+  <section id="schedule" class="mt-4 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-2xl mx-auto text-center">
+    <div class="bg-white border-2 border-[#C79C49] rounded-xl p-6 sm:p-8 shadow-sm">
+      <h3 class="text-lg sm:text-xl font-semibold mb-4">Let's talk about your next move.</h3>
+      <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
+        <button class="mobile-cta bg-[#C79C49] text-white text-base sm:text-lg px-6 py-3 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow font-semibold w-full sm:w-auto">
+          Schedule a Call
+        </button>
+      </a>
+      <p class="text-sm sm:text-base text-gray-700 mt-4 leading-relaxed">30 minutes to explore your goals and see if we're the right partner.</p>
+    </div>
+  </section>
+
+  <footer class="mt-10 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
+    &copy; 2024 Neowise Partners
+  </footer>
 
 </body>
-
 </html>
