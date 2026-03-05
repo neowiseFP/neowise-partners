@@ -323,27 +323,24 @@
     }
 
     .proof-stat {
-      display: flex;
-      align-items: baseline;
-      gap: 16px;
-      margin-bottom: 28px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-    .proof-stat:last-child { margin-bottom: 0; }
+    .proof-stat:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
 
     .proof-number {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 38px;
+      font-size: 32px;
       font-weight: 700;
       color: var(--gold);
-      line-height: 1.1;
-      white-space: nowrap;
-      flex-shrink: 0;
+      line-height: 1.2;
+      margin-bottom: 6px;
     }
 
     .proof-label {
-      font-size: 15px;
-      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
       line-height: 1.5;
     }
 
