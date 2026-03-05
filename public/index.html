@@ -2,292 +2,1196 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="theme-color" content="#FAF9F6" />
+  <meta name="theme-color" content="#1a2332" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neowise Partners</title>
+  <title>Neowise Partners — Ready for What's Next</title>
 
-  <meta name="description" content="Neowise Partners helps successful business owners optimize operations, increase profitability, and maximize value for growth or sale" />
-  <meta name="keywords" content="business operations, profit optimization, sale strategy, business value, operational excellence" />
-  <meta name="author" content="Tom, Neowise Partners" />
+  <!-- SEO Meta -->
+  <meta name="description" content="Neowise Partners helps successful business owners optimize operations, capture hidden profit, and build enterprise value — with a hands-on partner who's done it before." />
+  <meta name="keywords" content="business operations, profit optimization, sale strategy, business value, operational excellence, business growth advisory" />
+  <meta name="author" content="Tom Saric, Neowise Partners" />
 
-  <meta property="og:title" content="Neowise Partners - Ready for What's Next" />
-  <meta property="og:description" content="You've built something special. Ready for the next level?" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Neowise Partners — Ready for What's Next" />
+  <meta property="og:description" content="You built it from the ground up. Let's unlock what's next." />
   <meta property="og:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
   <meta property="og:url" content="https://neowisepartners.com/" />
   <meta property="og:type" content="website" />
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Neowise Partners - Ready for What's Next" />
-  <meta name="twitter:description" content="You've built something special and know how to run a successful business." />
+  <meta name="twitter:title" content="Neowise Partners — Ready for What's Next" />
+  <meta name="twitter:description" content="Helping successful business owners capture hidden profit and build lasting enterprise value." />
   <meta name="twitter:image" content="https://neowisepartners.com/hero-graphic-20250730.png" />
 
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@500&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Plausible Analytics -->
   <script defer data-domain="neowisepartners.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 
   <style>
-    /* Mobile-first approach */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #1a2332;
+      --navy-deep: #0f1620;
+      --navy-light: #243042;
+      --gold: #c8a44e;
+      --gold-light: #dabb6a;
+      --gold-muted: rgba(200, 164, 78, 0.15);
+      --cream: #f8f5ef;
+      --cream-dark: #ede8df;
+      --warm-white: #fdfcfa;
+      --text-dark: #1a2332;
+      --text-body: #3d4a5c;
+      --text-light: #6b7a8d;
+      --accent-green: #2d6a4f;
+      --accent-green-light: #40916c;
+    }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      background-color: #FAF9F6;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
+      font-family: 'Source Sans 3', Georgia, serif;
+      color: var(--text-dark);
+      background: var(--warm-white);
       line-height: 1.7;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
     }
-    
-    /* Tablet and up */
-    @media (min-width: 768px) {
-      body {
-        font-size: 19px;
-      }
+
+    /* ─── NAV ─── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(26, 35, 50, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200, 164, 78, 0.2);
+      transition: all 0.4s ease;
     }
-    
-    /* Desktop */
-    @media (min-width: 1024px) {
-      body {
-        font-size: 20px;
-      }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
     }
-    
-    h1, h2, h3, .font-grotesk {
-      font-family: 'Inter', sans-serif;
+
+    .nav-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .nav-cta {
+      background: var(--gold) !important;
+      color: var(--navy) !important;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: all 0.3s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light) !important;
+      transform: translateY(-1px);
+    }
+
+    /* Mobile menu */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      margin: 5px 0;
+      transition: all 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 40%, var(--navy-light) 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse 800px 600px at 20% 50%, rgba(200, 164, 78, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 600px 400px at 80% 30%, rgba(45, 106, 79, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(200, 164, 78, 0.1);
+      border-radius: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      animation: heroCirclePulse 8s ease-in-out infinite;
+    }
+
+    @keyframes heroCirclePulse {
+      0%, 100% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+      50% { opacity: 1; transform: translateY(-50%) scale(1.04); }
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 40px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(200, 164, 78, 0.12);
+      border: 1px solid rgba(200, 164, 78, 0.25);
+      border-radius: 100px;
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      animation: fadeSlideUp 0.8s ease-out both;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(38px, 4.5vw, 58px);
+      font-weight: 600;
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 24px;
+      animation: fadeSlideUp 0.8s 0.15s ease-out both;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: 19px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 40px;
+      max-width: 520px;
+      font-weight: 300;
+      animation: fadeSlideUp 0.8s 0.3s ease-out both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      animation: fadeSlideUp 0.8s 0.45s ease-out both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200, 164, 78, 0.3);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: transparent;
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* Hero right — stats card */
+    .hero-proof {
+      animation: fadeSlideUp 0.8s 0.5s ease-out both;
+    }
+
+    .proof-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+    }
+
+    .proof-card-header {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .proof-stat {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .proof-stat:last-child { margin-bottom: 0; }
+
+    .proof-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 44px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 130px;
+    }
+
+    .proof-label {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--cream);
+      border-top: 1px solid var(--cream-dark);
+      border-bottom: 1px solid var(--cream-dark);
+      padding: 28px 40px;
+    }
+
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-light);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .trust-icon {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: var(--gold);
+      stroke-width: 2;
+    }
+
+    /* ─── DIFFERENTIATOR ─── */
+    .diff-section {
+      padding: 100px 40px;
+      background: var(--warm-white);
+    }
+
+    .diff-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-eyebrow::before,
+    .section-eyebrow::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .diff-inner h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 3.5vw, 42px);
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      line-height: 1.25;
+    }
+
+    .diff-inner h2 em {
+      font-style: italic;
+      color: var(--accent-green);
+    }
+
+    .diff-body {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-body);
+      max-width: 750px;
+      margin: 0 auto 48px;
+    }
+
+    .diff-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--cream-dark);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .diff-col {
+      padding: 36px 32px;
+      background: var(--warm-white);
+    }
+
+    .diff-col-header {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--cream-dark);
+    }
+
+    .diff-col:first-child .diff-col-header { color: var(--text-light); }
+    .diff-col:last-child .diff-col-header { color: var(--accent-green); }
+
+    .diff-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .diff-list li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-body);
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .diff-col:first-child .diff-list li::before {
+      content: '\2715';
+      position: absolute;
+      left: 0;
+      color: #c0392b;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .diff-col:last-child .diff-list li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: var(--accent-green);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    /* ─── RESULTS ─── */
+    .results-section {
+      padding: 100px 40px;
+      background: linear-gradient(170deg, var(--navy-deep) 0%, var(--navy) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .results-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse 800px 500px at 50% 100%, rgba(200, 164, 78, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .results-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .results-inner .section-eyebrow { color: var(--gold-light); }
+
+    .results-inner h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 3.5vw, 42px);
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .results-subtitle {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 64px;
+      font-weight: 300;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .result-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 44px 32px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .result-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .result-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 164, 78, 0.3);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .result-card:hover::after { opacity: 1; }
+
+    .result-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(200, 164, 78, 0.12);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .result-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .result-card h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    .result-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ─── PROCESS ─── */
+    .process-section {
+      padding: 100px 40px;
+      background: var(--cream);
+    }
+
+    .process-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .process-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .process-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 3.5vw, 42px);
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .process-header p {
+      font-size: 18px;
+      color: var(--text-body);
+      font-weight: 300;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 28px;
+      bottom: 28px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), var(--gold-light), var(--accent-green));
+      opacity: 0.3;
+    }
+
+    .process-step {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      padding: 28px 0;
+      position: relative;
+    }
+
+    .step-number {
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
+      background: var(--warm-white);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--gold);
+      position: relative;
+      z-index: 2;
+    }
+
+    .step-content h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+      padding-top: 4px;
+    }
+
+    .step-content p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-body);
+      max-width: 600px;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-section {
+      padding: 100px 40px;
+      background: var(--warm-white);
+    }
+
+    .about-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .about-photo-area {
+      position: relative;
+    }
+
+    .about-photo {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .about-photo img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .about-photo::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      right: -12px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .about-cred {
+      margin-top: 24px;
+      padding: 20px;
+      background: var(--cream);
+      border-radius: 10px;
+      border-left: 3px solid var(--gold);
+    }
+
+    .about-cred-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    .about-cred-label {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .about-text .section-eyebrow { justify-content: flex-start; }
+
+    .about-text h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-body);
+      margin-bottom: 20px;
+    }
+
+    .about-text p strong {
+      color: var(--text-dark);
       font-weight: 600;
     }
-    .blueprint-grid {
-      background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
-      background-size: 20px 20px;
+
+    .about-quote {
+      margin-top: 32px;
+      padding: 24px 28px;
+      background: var(--cream);
+      border-radius: 10px;
+      border-left: 3px solid var(--gold);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      color: var(--text-dark);
+      line-height: 1.6;
     }
-    .content-box {
-      background-color: #FAF9F6;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      border: 1px solid rgb(199 156 73 / 0.1);
+
+    /* ─── CTA ─── */
+    .cta-section {
+      padding: 100px 40px;
+      background: linear-gradient(170deg, var(--navy-deep), var(--navy));
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
-    
-    /* Tablet and up */
-    @media (min-width: 768px) {
-      .content-box {
-        padding: 2rem;
-      }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(200, 164, 78, 0.08) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
     }
-    
-    /* Mobile CTA button sizing */
-    .mobile-cta {
-      min-height: 48px;
-      padding: 12px 24px;
-      touch-action: manipulation;
+
+    .cta-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 640px;
+      margin: 0 auto;
     }
-    
-    /* Tablet and up CTA */
-    @media (min-width: 768px) {
-      .mobile-cta {
-        padding: 12px 32px;
-      }
+
+    .cta-inner h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 3.5vw, 44px);
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+      line-height: 1.25;
     }
-    
-    /* Mobile font adjustments */
-    .mobile-text-lg {
+
+    .cta-inner p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .cta-inner .btn-primary {
+      padding: 18px 40px;
       font-size: 17px;
     }
-    
-    @media (min-width: 768px) {
-      .mobile-text-lg {
-        font-size: 18px;
-      }
+
+    .cta-note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
     }
-    
-    .mobile-text-xl {
-      font-size: 19px;
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: var(--navy-deep);
+      padding: 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
-    
-    @media (min-width: 768px) {
-      .mobile-text-xl {
-        font-size: 20px;
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer-logo span { color: var(--gold); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ─── SCROLL ANIMATIONS ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 100px 24px 60px;
       }
+      .hero::after { display: none; }
+      .hero-proof { order: -1; }
+      .proof-card { padding: 28px; }
+      .proof-stat { flex-direction: column; gap: 4px; }
+      .proof-number { font-size: 36px; min-width: auto; }
+      .results-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-photo-area { max-width: 300px; margin: 0 auto; }
+      .diff-columns { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: rgba(26, 35, 50, 0.98);
+        padding: 24px 40px;
+        gap: 20px;
+        border-bottom: 1px solid rgba(200, 164, 78, 0.2);
+      }
+      .trust-inner { gap: 24px; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner { padding: 0 20px; }
+      .hero-inner { padding: 90px 20px 48px; }
+      .hero h1 { font-size: 32px; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn-primary, .btn-secondary { justify-content: center; }
+      .proof-card { padding: 24px; }
+      .diff-section, .results-section, .process-section, .about-section, .cta-section { padding: 72px 20px; }
+      .trust-inner { gap: 16px; }
+      .trust-item { font-size: 13px; }
+      .process-step { gap: 20px; }
+      .step-number { width: 44px; height: 44px; min-width: 44px; font-size: 16px; }
+      .process-steps::before { left: 22px; }
+      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
     }
   </style>
 </head>
+<body>
 
-<body id="home" class="blueprint-grid text-[#26466D]">
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Neowise <span>Partners</span></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer" class="nav-cta">Schedule a Call</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <header class="w-full px-4 sm:px-6 py-3 border-b border-[#C79C49] bg-white sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
-      
-      <h1 class="text-xl sm:text-2xl font-grotesk text-center sm:text-left">Neowise Partners</h1>
-
-      <div class="flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-2 text-sm font-semibold text-center sm:text-left">
-        <div class="flex justify-center gap-4">
-          <a href="/" class="hover:underline">Home</a>
-          <a href="#about" class="hover:underline">About</a>
-          <a href="/chat.html" class="text-[#C79C49]">Chat with Neo</a>
-        </div>
-        <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer"
-          class="text-sm px-4 py-2 border border-[#C79C49] rounded hover:bg-[#C79C49] hover:text-white transition whitespace-nowrap">
-          Schedule a Call
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">Business Growth Advisory</div>
+      <h1>You built it from<br>the ground up.<br><em>Let's unlock what's next.</em></h1>
+      <p class="hero-sub">Neowise Partners helps successful business owners capture hidden profits, streamline operations, and build lasting enterprise value — with a hands-on partner who's done it before.</p>
+      <div class="hero-actions">
+        <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Schedule a Conversation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
+        <a href="#approach" class="btn-secondary">See Our Approach</a>
       </div>
-
     </div>
-  </header>
-
-  <section class="px-4 md:px-6 pt-8 pb-0 max-w-5xl mx-auto text-center">
-  <h2 class="text-xl md:text-2xl xl:text-3xl font-grotesk leading-snug tracking-tight font-semibold mb-2 mx-auto text-center max-w-[1100px]">
-    You've built something special. Ready for the next level?
-  </h2>
-  </section>
-
-  <section class="px-4 md:px-6 pt-0 pb-4 sm:pb-4 max-w-5xl mx-auto text-center">
-    <img
-      src="/hero-graphic-20250730.png"
-      alt="AI-powered workflow sketch"
-      class="mx-auto max-w-full object-top max-h-[200px] sm:max-h-none border-none mt-[-12px]"
-      style="mix-blend-mode: multiply; opacity: 0.95;"
-      loading="lazy"
-      decoding="async"
-    />
-  </section>
-
-  <section class="max-w-6xl mx-auto px-4 md:px-6 pt-0 -mt-6 sm:-mt-10 lg:-mt-16 pb-6 sm:pb-8 grid gap-4 sm:gap-6 md:grid-cols-3 text-center">
-    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-      <p class="text-lg sm:text-xl font-semibold mb-3">Untapped profit potential</p>
-      <p class="mobile-text-lg text-gray-700 leading-relaxed">Most successful companies have 15-25% more profit waiting to be captured with better systems.</p>
+    <div class="hero-proof">
+      <div class="proof-card">
+        <div class="proof-card-header">The track record behind the advice</div>
+        <div class="proof-stat">
+          <div class="proof-number">$3M → $55M</div>
+          <div class="proof-label">Revenue growth led as hands-on operator, not just advisor</div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-number">15–25%</div>
+          <div class="proof-label">Typical untapped profit potential in successful businesses</div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-number">Multi-state</div>
+          <div class="proof-label">Expansion powered by operational systems &amp; the right technology</div>
+        </div>
+      </div>
     </div>
-    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-      <p class="text-lg sm:text-xl font-semibold mb-3">Smarter, not harder</p>
-      <p class="mobile-text-lg text-gray-700 leading-relaxed">You've proven you can build. Now let's make every hour and dollar work better for you.</p>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      No software sales or commissions
     </div>
-    <div class="bg-white border-l-4 border-[#C79C49] p-6 sm:p-8 rounded shadow-sm">
-      <p class="text-lg sm:text-xl font-semibold mb-3">Built for what's next</p>
-      <p class="mobile-text-lg text-gray-700 leading-relaxed">Whether that's growth, partnership, or sale—let's position your business for maximum value.</p>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Partner, not vendor
     </div>
-  </section>
-
-  <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Why Neowise Partners</h3>
-       <div class="space-y-4 sm:space-y-6">
-         <p>
-           You've built a valuable business through smart decisions and hard work. Now you're thinking about the next chapter—whether that's growth, bringing in partners, or positioning for an eventual sale.
-         </p>
-         <p>
-           Neowise Partners helps successful business owners unlock the additional profit that's typically available and build the operational systems that increase enterprise value. Our approach focuses on operations and financial fundamentals first, then adds technology only when it makes sense.
-         </p>
-         <p>
-           No software sales, no commissions, no theoretical frameworks that sound impressive but don't work in the real world. Just practical improvements that deliver measurable results and position your business for growth, partnerships, or sale.
-         </p>
-       </div>
-     </div>
-   </section>
-
- <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-   <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
-     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">Three Focus Areas</h3>
-       <div class="space-y-4 sm:space-y-6">
-         <div>
-           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Streamlined Operations</h4>
-           <p class="mobile-text-lg">Leverage technology to automate the manual processes that are time-consuming. Free up capacity to focus on what matters most to your business.</p>
-         </div>
-         <div>
-           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Hidden Profit Potential</h4>
-           <p class="mobile-text-lg">Capture the 15-25% profit increase that's typically available in successful businesses through better systems and data-driven decision-making.</p>
-         </div>
-         <div>
-           <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Value Creation</h4>
-           <p class="mobile-text-lg">Build the kind of business that's attractive to buyers or partners. Position for growth or a future sale on your terms.</p>
-         </div>
-       </div>
-     </div>
-
-     <div class="flex justify-center order-first lg:order-last">
-       <img
-       src="/before-after-20250730.png"
-       alt="Before/After business optimization illustration"
-       class="w-full max-w-lg lg:max-w-xl rounded-md shadow-md opacity-95"
-       loading="lazy"
-       />
-     </div>
-   </div>
- </section>
-
-   <section class="px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
-       <div class="flex justify-center order-first lg:order-first">
-         <img
-         src="/growth-insight-20250730.png"
-         alt="Business partnership conversation illustration"
-         class="w-full max-w-lg lg:max-w-xl rounded-md shadow-md opacity-95"
-         loading="lazy"/>
-       </div>
-
-       <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-         <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-4 sm:mb-6 text-center font-semibold">How We Work Together</h3>
-         <p class="text-center mobile-text-lg font-semibold text-[#C79C49] mb-4 sm:mb-6">A Partner, Not Another Vendor</p>
-         <div class="space-y-4 sm:space-y-5">
-           <div>
-             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Listen First</h4>
-             <p class="mobile-text-lg">Every business is unique. We start by learning what's working and identifying the areas with highest potential impact.</p>
-           </div>
-           <div>
-             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Build on What Works</h4>
-             <p class="mobile-text-lg">Strong operations and clear financials come first. We enhance your proven systems before adding new technology.</p>
-           </div>
-           <div>
-             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Implement Together</h4>
-             <p class="mobile-text-lg">Real change happens through action, not reports. We work side by side to make improvements that stick and deliver results.</p>
-           </div>
-           <div>
-             <h4 class="font-semibold text-[#26466D] mb-2 sm:mb-3 mobile-text-xl">Transfer Knowledge</h4>
-             <p class="mobile-text-lg">You own the improvements, not rent them from us. Your team gets trained so the benefits continue long-term.</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
-
-   <section id="about" class="scroll-mt-24 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-6xl mx-auto">
-     <div class="content-box text-[18px] sm:text-[19px] lg:text-[20px] leading-relaxed">
-       <h3 class="text-xl sm:text-2xl font-grotesk uppercase tracking-wide mb-6 text-center font-semibold">About Tom</h3>
-       
-       <div class="space-y-4 sm:space-y-6">
-         <p>
-           <img
-             src="/tom-headshot.jpg"
-             alt="Tom Saric, Founder of Neowise Partners"
-             class="w-36 h-36 sm:w-44 sm:h-44 float-left mr-6 mb-4 mt-2 rounded-lg shadow-lg object-cover"
-             loading="lazy"
-           />
-           My background is in operations, finance, and strategy—with a track record of turning operational improvements into bottom-line results.
-         </p>
-         
-         <p>I know what it's like to scale a business because I've lived it. I helped take a family-owned company from $3 million to $55 million by building the operational foundation and implementing the right technology to expand across multiple states.</p>
-         
-         <p>When COVID-19 disrupted an $85 million acquisition I was leading, I guided the company through the crisis—restructuring operations and stabilizing the business to ensure it emerged stronger.</p>
-         
-         <p>That experience taught me that successful business owners don't need theoretical advice. They need practical solutions from someone who's been in the trenches. I started Neowise Partners to help business owners maximize what they've built—whether they're preparing for growth, considering partnerships, or preparing for a sale.</p>
-       </div>
-     </div>
-   </section>
-
-  <section id="schedule" class="mt-4 px-4 md:px-6 pt-6 sm:pt-8 pb-6 sm:pb-8 max-w-2xl mx-auto text-center">
-    <div class="bg-white border-2 border-[#C79C49] rounded-xl p-6 sm:p-8 shadow-sm">
-      <h3 class="text-lg sm:text-xl font-semibold mb-4">Let's talk about your next move.</h3>
-      <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer">
-        <button class="mobile-cta bg-[#C79C49] text-white text-base sm:text-lg px-6 py-3 rounded-full hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#C79C49] transition-shadow font-semibold w-full sm:w-auto">
-          Schedule a Call
-        </button>
-      </a>
-      <p class="text-sm sm:text-base text-gray-700 mt-4 leading-relaxed">30 minutes to explore your goals and see if we're the right partner.</p>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+      Practical results, not theory
     </div>
-  </section>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      Knowledge transfer included
+    </div>
+  </div>
+</div>
 
-  <footer class="mt-10 px-6 py-4 text-sm text-center text-[#8C8C8C] border-t border-[#C79C49]">
-    &copy; 2024 Neowise Partners
-  </footer>
+<!-- DIFFERENTIATOR -->
+<section class="diff-section" id="approach">
+  <div class="diff-inner reveal">
+    <div class="section-eyebrow">What Makes This Different</div>
+    <h2>Not another tech consultant.<br>A <em>business operator</em> who leverages technology.</h2>
+    <p class="diff-body">Most consultants sell software or hand you a report and wish you luck. I've spent my career in the trenches — as a CFO, operator, and strategist who used technology to build real results. The difference? I speak your language first, then translate it to technology.</p>
+    <div class="diff-columns">
+      <div class="diff-col">
+        <div class="diff-col-header">Typical Tech Consultant</div>
+        <ul class="diff-list">
+          <li>Leads with software recommendations</li>
+          <li>Theoretical frameworks &amp; buzzwords</li>
+          <li>Disappears after the pitch deck</li>
+          <li>Motivated by software commissions</li>
+          <li>Doesn't understand your P&amp;L</li>
+        </ul>
+      </div>
+      <div class="diff-col">
+        <div class="diff-col-header">Neowise Partners</div>
+        <ul class="diff-list">
+          <li>Leads with your business fundamentals</li>
+          <li>Battle-tested, practical improvements</li>
+          <li>Works alongside you to implement</li>
+          <li>Zero commissions — aligned with your ROI</li>
+          <li>Reads a balance sheet before a dashboard</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-section" id="results">
+  <div class="results-inner">
+    <div class="section-eyebrow reveal">Three Focus Areas</div>
+    <h2 class="reveal">Where the value lives</h2>
+    <p class="results-subtitle reveal">Every engagement is tailored, but the impact falls into three proven categories.</p>
+    <div class="results-grid">
+      <div class="result-card reveal">
+        <div class="result-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+        </div>
+        <h3>Hidden Profit Potential</h3>
+        <p>Most successful companies have 15–25% more profit waiting to be captured. We find it through better systems, clearer data, and operational precision — not cost-cutting.</p>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Streamlined Operations</h3>
+        <p>Technology should free up your time, not create more work. We automate the manual processes that drain your best people so they can focus on what actually grows the business.</p>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Enterprise Value</h3>
+        <p>Whether you're planning for growth, bringing in partners, or positioning for a future sale — we build the operational foundation that makes your business more valuable and less dependent on you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="process-inner">
+    <div class="process-header reveal">
+      <div class="section-eyebrow">How We Work Together</div>
+      <h2>A partner, not another vendor</h2>
+      <p>Collaborative and built around your business — not a one-size-fits-all playbook.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Listen &amp; Diagnose</h3>
+          <p>Every business is unique. We start with your goals, your numbers, and what keeps you up at night. No pre-packaged audits — just an honest conversation about where the real opportunities are.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Build on What Works</h3>
+          <p>Your business got here for a reason. We strengthen your operational and financial foundation first, then layer in technology where it creates a clear, measurable return.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Implement Together</h3>
+          <p>Real change doesn't come from reports. We roll up our sleeves and work side by side with you and your team to make improvements that stick and deliver results you can see in your financials.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Transfer &amp; Sustain</h3>
+          <p>You own the improvements — you don't rent them. Your team gets trained on every system and process so the benefits compound long after our engagement ends.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-photo-area reveal">
+      <div class="about-photo">
+        <img src="/tom-headshot.jpg" alt="Tom Saric, Founder of Neowise Partners" loading="lazy" />
+      </div>
+      <div class="about-cred">
+        <div class="about-cred-number">18x</div>
+        <div class="about-cred-label">Revenue growth delivered as operator ($3M &rarr; $55M)</div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-eyebrow">About Tom Saric</div>
+      <h2>I've been in your shoes.<br>That's why this works.</h2>
+      <p>My background is in <strong>operations, finance, and strategy</strong> — with a track record of turning operational improvements into bottom-line results. I'm not a technologist who learned business. I'm a business operator who learned technology.</p>
+      <p>I helped take a family-owned company from <strong>$3 million to $55 million</strong> by building the operational foundation and implementing the right technology to expand across multiple states. When COVID-19 disrupted an $85 million acquisition I was leading, I guided the company through the crisis — restructuring operations and stabilizing the business so it emerged stronger.</p>
+      <p>That experience taught me that successful business owners don't need theoretical advice. They need <strong>practical solutions from someone who's been in the trenches</strong>.</p>
+      <div class="about-quote">"I started Neowise Partners because I saw too many good businesses leaving money on the table — and too many consultants making it worse."</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2>Let's talk about<br>your next move.</h2>
+    <p>A 30-minute conversation to explore your goals, identify quick wins, and see if we're the right partner for your business.</p>
+    <a href="https://calendly.com/tom-neowisepartners" target="_blank" rel="noopener noreferrer" class="btn-primary">
+      Schedule a Call
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="cta-note">No sales pitch. No obligation. Just an honest conversation.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Neowise <span>Partners</span></div>
+    <div class="footer-copy">&copy; 2025 Neowise Partners. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- SCROLL REVEAL -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<!-- CHATBASE WIDGET (bottom-right chat bubble) -->
+<script>
+  window.chatbaseConfig = {
+    chatbotId: "66d-JcAyWp17nJ-vjHsXk",
+  };
+</script>
+<script src="https://www.chatbase.co/embed.min.js" id="chatbase-script" defer></script>
 
 </body>
 </html>
